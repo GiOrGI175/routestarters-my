@@ -7,7 +7,15 @@ import photo5 from './photos/5.jpg';
 import photo6 from './photos/6.jpg';
 import photo7 from './photos/7.jpg';
 
-const wondersImages = [
+export type wondersImage = {
+  id: string;
+  name: string;
+  src: StaticImageData;
+  photographer: string;
+  location: string;
+};
+
+const wondersImages: wondersImage[] = [
   {
     id: '1',
     name: 'Great Wall of China',
